@@ -1,0 +1,145 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* iPhone system font */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(200, 180, 255, 0.2), rgba(150, 130, 210, 0.2)); /* Subtle lavender gradient */
+  color: #fff;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: rgba(180, 160, 255, 0.7); /* Muted lavender background */
+}
+
+.right {
+  right: 0;
+  background-color: rgba(160, 140, 230, 0.7); /* Soft purple with transparency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* Slight transparency for container */
+  border-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  resize: none;
+}
+
+textarea:focus {
+  border-color: #b29eff; /* Soft lavender border on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(178, 158, 255, 0.5);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+input[type="submit"] {
+  padding: 8px 18px; /* Smaller padding */
+  border: none;
+  border-radius: 8px; /* Slightly rounded corners */
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px; /* Decreased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Cofos Sans', sans-serif; /* Use Cofos Sans font for submit button */
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+input[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+.comments {
+  text-decoration: underline;
+  text-underline-position: under;
+  color: #b29eff; /* Soft lavender for comments */
+  cursor: pointer;
+}
+
+.comments:hover {
+  color: #9d7eff; /* Slightly darker lavender on hover */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 500px; /* Larger image */
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.coment-bottom {
+  background-color: transparent; /* Make the background transparent */
+  padding: 1rem;
+}
+
+.coment-bottom .commented-section {
+  padding: 8px 30px; /* Reduced padding to narrow the height */
+  margin: 10px auto; /* Center the box with some margin */
+  width: 98%; /* Increase width to make the box longer */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent box background */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border around the box */
+  border-radius: 8px; /* Rounded corners for the box */
+}
+
+.coment-bottom .review-text {
+  color: white;
+  font-size: 16px; /* Smaller font size */
+  font-weight: normal; /* Unbold the font */
+  font-family: 'Cofos Sans', sans-serif; /* Change font to Cofos Sans */
+  background-color: transparent; /* Ensure background stays transparent */
+}
